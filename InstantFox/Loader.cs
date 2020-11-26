@@ -95,11 +95,11 @@ namespace InstantFox
             }
         }
 
-        public void ExecuteResult()
+        public void ExecuteResult(params string[] args)
         {
             Print("Starting firefox...");
             var path = Path.Combine(this.WorkPath, "core", "firefox.exe");
-            var echo = Read(path);
+            var echo = Read(path,string.Join(' ',args));
             if (!string.IsNullOrWhiteSpace(echo))
             {
                 Print("Firefox output", echo);

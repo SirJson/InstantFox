@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "InstantFox": {
+      "commandName": "Project",
+      "commandLineArgs": "-foreground -no-remote"
+    }
+  }
+}
